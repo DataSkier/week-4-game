@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pirate Booty Collector</title>
+	<!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Bootstrap override CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<div class="main container-fluid">
+		<div class="jumbotron" style="background-image: url(assets/images/Gold-Coin-1.jpg); background-size: 100% 100%;">
+  			<h1>Pirate Booty Collector</h1>
+  			<p><h2><strong>Yar matey, this be how you play the game.</strong></h2></p>
+			<p><strong>Select the treasure chest by clicking on their image. Each chest has a hidden value. On each click the booty value will be added to your total. Try to match your total booty to the goal value displayed. If you go over, walk the plank. If you can match the score you find your treasure!</strong></p>
+		</div>
+		<div class="row">
+			<div class="panel panel-default col-xs-6 col-md-6 col-lg-6">
+				<h3 class="panel-heading">Scoreboard</h3>
+					<div class="panel-body">
+						<h1>Wins: </h1>
+							<h1 id="number-wins">0</h1>
+						<h1>Lost: </h1>
+							<h1 id="number-lost">0</h1>
+					</div>
+			</div>
+			<div class="panel panel-default col-xs-6 col-md-6 col-lg-6" id="scores">
+				<h3 class="panel-heading">Booty</h3>
+					<div class="panel-body">
+						<h1>Goal value: </h1>
+							<h1 id="target-number">0</h1>
+						<h1>Your booty: </h1>
+							<h1 id="your-total">0</h1>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-12 btn-group" id="chests">
+			<button class="chest-image btn btn-default" id="chest1" style="background: transparent; border: 0;" value="1">
+				<img src="assets/images/chest.jpg" style="width:300px;">
+			</button>
+			<button class="chest-image btn btn-default" id="chest2" style="background: transparent; border: 0;" value="2">
+				<img src="assets/images/chest.jpg" style="width:300px;">
+			</button>
+			<button class="chest-image btn btn-default" id="chest3" style="background: transparent; border: 0;" value="3">
+				<img src="assets/images/chest.jpg" style="width:300px;">
+			</button>
+			<button class="chest-image btn btn-default" id="chest4" style="background: transparent; border: 0;" value="4">
+				<img src="assets/images/chest.jpg" style="width:300px;">
+			</button>
+		</div>
+	</div>
+
+	<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
